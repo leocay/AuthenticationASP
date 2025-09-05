@@ -1,0 +1,14 @@
+services:
+  auth-db:
+    image: mysql
+    container_name: authen-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456789"   # root password
+      MYSQL_DATABASE: "TestAuthen"       # database sẽ tạo sẵn
+      MYSQL_USER: "appuser"              # user app
+      MYSQL_PASSWORD: "app123"           # password cho user app
+    volumes:
+      - D:\Volumes\mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
