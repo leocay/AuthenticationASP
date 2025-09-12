@@ -22,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Account\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\AuthenService.Domain\AuthenService.Domain.csproj" />
   </ItemGroup>
 
